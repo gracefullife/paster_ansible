@@ -1,0 +1,4 @@
+- name: for Deploying Web Server
+  hosts: web
+  tasks:
+    - debug: msg='for web server'

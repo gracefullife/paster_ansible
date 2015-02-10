@@ -1,0 +1,12 @@
+ungrouped_server 
+[stage]
+staging_server ansible_connection=local
+
+[web]
+staging_server ansible_connection=local
+
+[api]
+staging_server ansible_connection=local
+
+[db]
+staging_server ansible_connection=local

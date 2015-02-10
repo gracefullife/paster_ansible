@@ -1,0 +1,14 @@
+- name:  Ansible Project Template
+  hosts: stage:prod
+  gather_facts: False
+  tasks: 
+    - name: Display Debug Message
+      debug: msg='Display Debug Message'
+    - name: Display group name and variable
+      debug: var=group_names
+    - name: Display group name and variable
+      debug: var=groups
+    - name: Display group name and variable
+      debug: var=inventory_hostname
+    
+- include: web.yml
